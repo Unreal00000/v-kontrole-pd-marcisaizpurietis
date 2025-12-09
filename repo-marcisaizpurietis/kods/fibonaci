@@ -1,0 +1,16 @@
+local fibonaci = {}
+fibonaci[1] = 0
+fibonaci[2] = 1
+fibonaci[3] = 1
+
+local fibonaciNew = {}
+
+for i = 4, 100 do
+	fibonaci[i] = fibonaci[i - 1] + fibonaci[i - 2]
+end
+
+for i in fibonaci do
+	fibonaciNew[i] = fibonaci[101-i]
+end
+
+print(fibonaciNew)
