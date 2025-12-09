@@ -1,0 +1,10 @@
+local string = '"Kad skolēni sabojā git projektu: "Nu ko… laiks jaunam klonam."'
+local aCount = 0
+
+for char in string:gmatch("%a") do
+	if char == "a" then
+		aCount += 1
+	end
+end
+
+print(aCount)
